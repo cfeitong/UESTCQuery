@@ -14,10 +14,10 @@
 - [ ] 查询空闲教室
 
 ## 使用方法
-**目前仅支持在Windows命令行中运行**
-1. 在/bin中找到编译好的uestc_query.exe，将其放在某个文件夹中  
-2. 在cmd或者powershell中将目录切换到uestc_query.exe所在文件夹  
-3. 执行相关命令
+1. 安装相关依赖（安装方法在下方）
+2. 运行**build.py**构建exe文件，文件保存在bin文件夹下 
+3. 打开cmd或powershell，将目录切换到bin文件夹
+4. 使用相关命令
 
 ### 命令示例
 查询当前学期考试信息
@@ -31,12 +31,14 @@
 
 ### 命令格式
 ```cmd
-./uestc_query.exe params username password
+./uestc_query.exe params username password other_params 
 ```
 params列表  
 "-e", "--exam" : 查询考试安排  
 "-g", "--grade": 查询成绩  
-"-s", "--semester" : 与"-e"或"-g配合使用，查询某个学期考试安排 如"-s 2015-2016-1"表示查询2015-2016第一个学期的考试安排
+
+other_params列表  
+"-s", "--semester" : 查询某个学期相关信息 如"-s 2015-2016-1"表示查询2015-2016第一个学期的相关信息
  
  ## 开发方法
  - clone工程
@@ -45,13 +47,11 @@ params列表
  pip install -r requirements.txt
  ```
  
- ### 目录结构
- \-bin 编译后的.exe文件  
+ ### 目录结构 
  \-UESTCQuery/  
  \-\-\-constant/        存放常用的一些常量  
  \-\-\-model/  
- \-\-\-query/           存放各种查询py文件  
- \-\-\-tests/           存放单元测试py文件  
+ \-\-\-query/           存放各种查询py文件    
  \-\-\-config.py        配置文件  
  \-\-\-login.py         登录信息门户代码文件  
  \-\-\-uestc_query.py   主程序文件  
