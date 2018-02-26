@@ -61,7 +61,7 @@ other_params列表
  \-\-\-login.py         登录信息门户代码文件  
  \-\-\-uestc_query.py   主程序文件  
  \-\-\-utils.py         常用的一些工具函数  
- \-\-build.py           构建程序，运行可以自动编译成exe文件到bin/目录（需提前安装依赖）
+ \-\-build.py           构建程序，运行可以自动编译成exe文件到bin/目录（需提前安装依赖  
  \-requirements.txt     pip依赖文件
  
  ## 联系方式
