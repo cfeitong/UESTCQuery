@@ -11,5 +11,8 @@ EXAM_QUERY_URL = "http://eams.uestc.edu.cn/eams/stdExamTable!examTable.action"
 GRADE_URL = "http://eams.uestc.edu.cn/eams/teach/grade/course/person.action"
 GRADE_QUERY_URL = "http://eams.uestc.edu.cn/eams/teach/grade/course/person!search.action"
 
+# 课表地址
+CURRICULUM_QUERY_URL = "http://eams.uestc.edu.cn/eams/courseTableForStd!courseTable.action"
+
 # 获得学期ID地址
 SEMESTER_ID_QUERY_URL = "http://eams.uestc.edu.cn/eams/dataQuery.action"
