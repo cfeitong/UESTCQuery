@@ -1,0 +1,1 @@
+TABLE_WIDTH = 8
